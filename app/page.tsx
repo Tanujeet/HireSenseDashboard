@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/dist/client/link";
 
 export default function Home() {
   return (
@@ -292,43 +293,42 @@ export default function Home() {
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.42 }}
         >
           {/* Button 1 — Roadmap / Choose path */}
-          <motion.a
-            href="https://roadmap.sh"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary"
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-            transition={{ type: "spring", stiffness: 400, damping: 20 }}
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+          <Link href="/career-path">
+            <motion.div
+              className="btn btn-primary"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              transition={{ type: "spring", stiffness: 400, damping: 20 }}
             >
-              <path d="M3 12h18M13 6l6 6-6 6" />
-            </svg>
-            Choose Your Path
-            <span className="arrow-icon">
               <svg
-                width="12"
-                height="12"
+                width="16"
+                height="16"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="1.8"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
-                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                <path d="M3 12h18M13 6l6 6-6 6" />
               </svg>
-            </span>
-          </motion.a>
+              Choose Your Path
+              <span className="arrow-icon">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M7 17L17 7M17 7H7M17 7v10" />
+                </svg>
+              </span>
+            </motion.div>
+          </Link>
 
           {/* Button 2 — Resume optimizer */}
           <motion.a
