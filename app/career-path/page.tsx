@@ -7,32 +7,32 @@ const cards = [
   {
     title: "Frontend Development",
     description: "Learn HTML, CSS, JavaScript, React and build modern UIs.",
-    link: "https://roadmap.sh/frontend",
+    link: "https://frontend-two-kappa-58.vercel.app/",
   },
   {
     title: "Backend Development",
     description: "Work with servers, databases, APIs and system logic.",
-    link: "https://roadmap.sh/backend",
+    link: "https://backend-iota-nine-82.vercel.app/",
   },
   {
     title: "Data Analyst",
     description: "Analyze data, build dashboards, and derive insights.",
-    link: "https://roadmap.sh/data-analyst",
+    link: "https://data-analyst-kappa.vercel.app/",
   },
   {
     title: "AI Engineer",
     description: "Build AI systems using LLMs, APIs, and real-world models.",
-    link: "https://roadmap.sh/ai-engineer",
+    link: "https://ai-engineer-delta.vercel.app/",
   },
   {
     title: "Machine Learning Engineer",
     description: "Train models, optimize pipelines, and deploy ML systems.",
-    link: "https://roadmap.sh/ml-engineer",
+    link: "https://machine-learning-six-pi.vercel.app/",
   },
   {
     title: "Data Scientist",
     description: "Work on statistics, ML, and predictive data modeling.",
-    link: "https://roadmap.sh/data-scientist",
+    link: "https://data-scientist-silk.vercel.app/",
   },
 ];;
 
@@ -73,19 +73,7 @@ export default function CareerPathPage() {
             }}
           >
             {/* LEFT → LOGO */}
-            <a
-              href="https://hire-sense-git-main-tanujeets-projects.vercel.app/dashboard"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                textDecoration: "none",
-                fontFamily: "'Instrument Serif', serif",
-                fontSize: 20,
-                color: "#eae7ff",
-              }}
-            >
-              HireSense
-            </a>
+            <Link href="/">HireSense</Link>
 
             {/* RIGHT */}
             <span
